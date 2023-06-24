@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../static/bootstrap.min.css">
+		<script src="../static/jquery.slim.min.js"></script>
+		<script src="../static/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+		<form action="/chat" class="m-3" method="post">
+		<input type="text" class="form-control" placeholder="Username" name="username">
+		<div class="input-group mb-3">
+		<textarea type="text" class="form-control" placeholder="Message" name="message"></textarea>
+		<div class="input-group-append">
+		<button type="submit" class="btn btn-primary">Submit</button>
+		</div>
+		</div>
+		</form>
+		<div>
+			{% for message in messages %}
+			<div class="card m-3">
+				<div class="card-body">
+					<h5 class="card-title">{{message['username']}}</h5>
+					{{message['message']}}
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</body>
+</html>
