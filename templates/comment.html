@@ -16,7 +16,7 @@
 		</div>
 		</form>
 		<div>
-			{% for message in messages %}
+			{% for message in messages[-1:-51:-1] %}
 			<div class="card m-3">
 				<div class="card-body">
 					<h5 class="card-title">{{message['username']}}</h5>
