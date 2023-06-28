@@ -61,7 +61,5 @@ def chat():
         global message
         message = str(message) + str(username) + ":" + str(mess) + ";"
         messages.append({"username": str(username), "message": str(mess)})
-        global cnt
-        cnt += 1
         db.set("message", message)
-        return redirect("/chat")
+        return redirect("/comment")
