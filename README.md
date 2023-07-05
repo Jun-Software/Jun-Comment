@@ -1,7 +1,7 @@
 ## 部署
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/jcj-software/comment)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/lemonorangeapple/comment)
 
-点一下就得，
+点一下就行，
 
 然后设置环境变量：
 |        名称        |                   值                  |
