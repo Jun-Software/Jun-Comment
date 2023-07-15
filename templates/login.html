@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../static/bootstrap.min.css">
+		<script src="../static/jquery.slim.min.js"></script>
+		<script src="../static/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+		<form action="/login" method="post">
+			<div class="card m-3">
+				<div class="card-body">
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="用户名" name="username" aria-label="Username" aria-describedby="basic-addon1">
+					</div>
+					<div class="input-group mb-3">
+						<input type="password" class="form-control" placeholder="密码" name="password" aria-label="Username" aria-describedby="basic-addon1">
+					</div>
+					<div class="input-group mb-3">
+						<input type="radio" class="form-control" name="type" value="register" aria-describedby="basic-addon1"><p>注册</p>
+					</div>
+					<div class="input-group mb-3">
+						<input type="radio" class="form-control" name="type" value="login" aria-describedby="basic-addon1"><p>登录</p>
+					</div>
+					<button class="btn btn-primary" type="submit">提交</button>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>
