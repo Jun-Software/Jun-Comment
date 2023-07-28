@@ -65,7 +65,7 @@ def login():
     if request.method == "GET":
         inv = request.values.get("invite")
         if inv is None:
-            return 404, '<html lang="en"><head><title>404 Not Found</title></head><body><h1>Not Found</h1><p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p></body></html>'
+            return redirect('/404')
         global invites
         if inv not in invites:
             return "邀请码错误！"
