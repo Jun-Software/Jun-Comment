@@ -41,16 +41,6 @@ if user is not None:
         users.append({'username': str(u[0]), 'password': str(u[1])})
 else:
     user = ""
-    
-invites = []
-invite = db.get("invite")
-if user is not None:
-    temp = invite.split(";")
-    temp.remove('')
-    for i in temp:
-        invites.append(i)
-else:
-    invite = ""
 
 @app.route("/")
 def index():
@@ -63,12 +53,6 @@ def login():
     if session.get('login') == True:
         return redirect('/chat')
     if request.method == "GET":
-        inv = request.values.get("invite")
-        if inv is None:
-            return redirect('/404')
-        global invites
-        if inv not in invites:
-            return "邀请码错误！"
         return render_template("login.html")
     elif request.method == "POST":
         Type = request.values.get("type")
