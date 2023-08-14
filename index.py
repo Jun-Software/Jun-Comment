@@ -2,6 +2,8 @@ import redis
 from flask import *
 import os
 from pysmx.SM3 import SM3
+from gevent import monkey
+monkey.patch_all()
 
 def sm3_hash(data: str):
     s = SM3()
