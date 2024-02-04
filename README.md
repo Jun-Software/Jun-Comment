@@ -1,3 +1,6 @@
+# Jun-Comment
+一个简洁的评论系统
+
 ## 部署
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/lemonorangeapple/comment)
 
